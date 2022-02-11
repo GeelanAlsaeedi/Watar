@@ -7,20 +7,97 @@ body {
     text-align: right;
 }
 
-.wrapper {
-    display: flex;
+.wrapper { /* this class give content part the whole 12 column of the bootstrap grid without the sidebar part*/
+    display: flex; 
     width: 100%;
 }
 
-#sidebar {
+/* ------------------- sidebar styling ------------------- */
+.sidebar{
+    min-height: 100vh; /* this make the sidebar extend vertically to the end of the page*/
     width: 25%;
-    position: fixed;
-    top: 0;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    position: relative; /* set inner div width to be equal to the width of the outer div*/ 
+}
+
+.sidebar ul {
+    list-style: none; /* to remove list-style property from the list of items*/
+    padding-right: 0; /* remove indentation (space) from right*/
+}
+
+#active{
+    border-right-style: solid;
+    color: black;
+}
+
+.sidebarLogo{ /* to center the logo*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.sidebarLogo a img { /* to resize the logo*/
+    width: 150px;
+    height: 100%;
+}
+
+.sidebar ul li {
+    line-height: 30px;
+}
+.sidebar ul li a {
+    color: rgb(148, 148, 148);
+    align-items: center;
+    display: flex;
+}
+
+.sidebar ul li a:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.sidebar ul li a i{
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.sidebar .sidebarEnd {
+    position: absolute;
+    bottom: 0;
     right: 0;
-    height: 100vh;
-    z-index: 999;
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.3s;
+    width: 100%;
+    line-height: 30px;
+}
+
+.sidebar .sidebarEnd button{
+   width: 100%; 
+   background-color: rgba(0,0,0,0); /* To make the button transparent */
+   color:rgb(148, 148, 148);
+   text-align: right;
+   text-decoration: none;
+   border: none;
+   padding-right: 20px; 
+   padding-top: 7px;
+   padding-bottom: 7px;
+   line-height: 30px;
+   display: flex;
+   vertical-align:middle;
+}
+
+.sidebar .sidebarEnd button i {
+    padding-left: 10px;
+    padding-right: 20px;
+    vertical-align:middle; /* to align the icon and the text in the same line*/ 
+}
+
+.sidebar .sidebarEnd button:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.sidebar .sidebarEnd p {
+    color:rgb(148, 148, 148);
+    text-align: center;
+    font-size: 12px;
+    vertical-align:middle;
 }
 

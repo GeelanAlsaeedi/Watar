@@ -13,6 +13,8 @@
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <!--Our stylesheet-->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- Google icons -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 </head>
 
 
@@ -22,39 +24,73 @@
 
     <!----------------------------------------------- Sidebar ----------------------------------------------->
     <!-- div For the ENTIRE sidebar -->
-    <nav class="sidebar-right"> 
-      <!-- div for the header (logo) of the sidebar -->
-      <div class="sidebar-header">
-        <div class="sidebarLogo">
-          <a href="index.html"><img src="img/Watar.png" alt="وتر"></a>
+    <nav class="sidebar"> 
+      <!-- div for the header (LOGO) of the sidebar -->
+      <div class="">
+        <div class="sidebarLogo"> <!-- CSS class -->
+          <a href="index.html"><img src="img/Watar.png" alt="وتر" ></a>
         </div>
       </div>
 
       <!-- div for the content of the sidebar -->
-      <ul class="list-unstyled components">
+      <ul >
         
-        <li>
-          <a class="nav-link active" href="index.html">الصفحة الرئيسية</a>
+        <li >
+          <a class="nav-link" id="active" href="index.html">
+            <i class="material-icons-outlined">home</i> <!-- Google class -->
+            <span class="links_name"> الصفحة الرئيسية</span> <!-- CSS class -->
+          </a>
         </li>
+
         <li>
-          <a class="nav-link" href="createVoice.html">إنشاء مقطع صوتي</a>
+          <a class="nav-link" href="index.html">
+            <i class="material-icons-outlined">add</i>
+            <span class="links_name"> إنشاء مقطع صوتي</span>
+          </a>
         </li>
+
         <li>
-          <a class="nav-link" href="cloneYourVoice.html">انسخ صوتك</a>
+          <a class="nav-link" href="index.html">
+            <i class="material-icons-outlined">record_voice_over</i>
+            <span class="links_name"> انسخ صوتك</span>
+          </a>
         </li>
+
         <li>
-          <a class="nav-link" href="exploreGallery.html">تصفح معرض الأصوات</a>
+          <a class="nav-link" href="index.html">
+            <i class="material-icons-outlined">volume_up</i>
+            <span class="links_name"> تصفح معرض الأصوات</span>
+          </a>
         </li>
+
         <li>
-          <a class="nav-link" href="preferredVoices.html">الأصوات المفضلة</a>
+          <a class="nav-link" href="index.html">
+            <i class="material-icons-outlined">favorite_border</i>
+            <span class="links_name"> الأصوات المفضلة</span>
+          </a>
         </li>
+
         <li>
-          <a class="nav-link" href="profile.html">الملف الشخصي</a>
+          <a class="nav-link" href="index.html">
+            <i class="material-icons-outlined">person_outline</i>
+            <span class="links_name"> الملف الشخصي</span>
+          </a>
         </li>
 
       </ul>
 
       <!-- div for the end (logout) of the sidebar -->
+      <div class="sidebarEnd">
+        <button class="logout">
+          <i class="material-icons-outlined"> logout</i>
+          <span>تسجيل الخروج</span>
+        </button>
+        <p>
+          Copyright &copy; WATAR
+          <script>document.write(new Date().getFullYear());</script>
+           
+        </p>
+      </div>
 
     </nav>
 
