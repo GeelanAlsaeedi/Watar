@@ -101,7 +101,7 @@ body {
 }
 
 /* sidebar for mobiles (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
     .sidebar{
         width:10%;
     }
@@ -130,3 +130,36 @@ body {
     }
   }
 /* -------------------------------------- HOME PAGE -------------------------------------- */
+
+.container{
+    padding: 50px 100px;
+}
+
+.pageBtn{
+    border-radius: 12px;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding: 14px 25px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    height: 200px;
+}
+
+.pageBtn i {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.pageBtn span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}

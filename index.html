@@ -101,11 +101,45 @@
     </nav>
 
     <!-----------------------------------------------  page content ----------------------------------------------->
-    <div class="content app-content container-fluid">
-      <div class="row">
-        <div class="col-4 bg-secondary">ranoo</div>
-        <div class="col-4 bg-warning">syami</div>
-        <div class="col-4 bg-primary">hating you</div>
+    <!-- container for the padding -->
+    <div class="container">
+      <!-- User info row -->
+      <div class="row" style="height: 15%; background-color: aqua;">
+        user info
+      </div>
+      <!-- buttons row (nested)-->
+      <div class="row align-items-center" style="height: 85%; ">
+        <!-- it has one column that will nest the other 2 rows-->
+        <div class="col-12">
+
+          <!-- first nested row: for the upper buttons-->
+          <div class="row  justify-content-between" >
+
+            <button  type="button" class="col-md-5 mt-5 btn pageBtn">
+                <i class="material-icons-outlined">add</i>
+                <span>إنشاء محتوى صوتي</span>
+            </button>
+
+            <button  type="button" class="col-md-5 mt-5 btn pageBtn">
+              <i class="material-icons-outlined">record_voice_over</i>
+              <span>انسخ صوتك</span>
+            </button>
+          </div>
+
+          <!-- second nested row: for the lower buttons-->
+          <div class="row  justify-content-between" >
+
+            <button  type="button" class="col-md-5 mt-5 btn pageBtn">
+                <i class="material-icons-outlined">volume_up</i>
+                <span>تصفح معرض الأصوات</span>
+            </button>
+
+            <button  type="button" class="col-md-5 mt-5 btn pageBtn">
+              <i class="material-icons-outlined">favorite_border</i>
+              <span>الأصوات المفضلة</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
