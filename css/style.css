@@ -12,7 +12,7 @@ body {
     width: 100%;
 }
 
-/* ------------------- sidebar styling ------------------- */
+/* -------------------------------------- sidebar styling -------------------------------------- */
 .sidebar{
     min-height: 100vh; /* this make the sidebar extend vertically to the end of the page*/
     width: 25%;
@@ -61,6 +61,7 @@ body {
     padding-right: 20px;
 }
 
+
 .sidebar .sidebarEnd {
     position: absolute;
     bottom: 0;
@@ -69,29 +70,27 @@ body {
     line-height: 30px;
 }
 
-.sidebar .sidebarEnd button{
-   width: 100%; 
-   background-color: rgba(0,0,0,0); /* To make the button transparent */
-   color:rgb(148, 148, 148);
-   text-align: right;
-   text-decoration: none;
-   border: none;
-   padding-right: 20px; 
-   padding-top: 7px;
-   padding-bottom: 7px;
-   line-height: 30px;
-   display: flex;
-   vertical-align:middle;
+.sidebar .sidebarEnd ul {
+    list-style: none; /* to remove list-style property from the list of items*/
+    padding-right: 0; /* remove indentation (space) from right*/
 }
 
-.sidebar .sidebarEnd button i {
-    padding-left: 10px;
-    padding-right: 20px;
-    vertical-align:middle; /* to align the icon and the text in the same line*/ 
+.sidebar .sidebarEnd ul li {
+    line-height: 30px;
+}
+.sidebar .sidebarEnd ul li a {
+    color: rgb(148, 148, 148);
+    align-items: center;
+    display: flex;
 }
 
-.sidebar .sidebarEnd button:hover{
+.sidebar .sidebarEnd ul li a:hover{
     background-color: rgb(228, 228, 228);
+}
+
+.sidebar .sidebarEnd ul li a i{
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
 .sidebar .sidebarEnd p {
@@ -101,3 +100,33 @@ body {
     vertical-align:middle;
 }
 
+/* sidebar for mobiles (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .sidebar{
+        width:10%;
+    }
+
+    .links_name{
+        display: none;
+    }
+
+    .sidebarLogo a img { /* to resize the logo*/
+        width: 55px;
+        height: 55px;
+    }
+
+    .sidebar ul li a i{
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+    .sidebar .sidebarEnd ul li a i{
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+    .sidebar .sidebarEnd p {
+        font-size: 7px;
+    }
+  }
+/* -------------------------------------- HOME PAGE -------------------------------------- */
