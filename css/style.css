@@ -131,85 +131,11 @@ body {
         font-size: 7px;
     }
   }
-/* -------------------------------------- HOME PAGE -------------------------------------- */
 
-.container{
-    padding: 50px 100px;
-    /* هذه السطرين عشان لما الأزارير تصير بشكل طولي وبحكم انه لها طول ثابت
-     راح تخرج عن حدود الكونتينر وتخرب شكل السايد بار ،، هذه السطرين ما تخليه يصير كذا ويسوي سكرول  */
-    height: 100vh;
-    overflow: scroll;
-}
-
-/* ...... HEADER ...... */
-.username{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.username p {
-    font-size:16px;
-    line-height: 0.5;
-}
-.username span{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.profile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.profileAvatar{
-    border-radius: 50%;
-    background-color: rgb(238, 238, 238);
-    width: 90px;
-    height: 90px;
-    background-image: url("../img/Default_user_avatar.png");
-    background-size: cover;
-
-}
-
-/* ...... the 4 buttons  ...... */
-
-.pageBtn{ /* pageBtn is a class for the 4 buttons in the main page */
-    border-radius: 12px;
-    background-color: rgb(238, 238, 238);
-    color: black;
-    padding: 14px 25px;
-    text-align: right;
-    text-decoration: none;
-    display: inline-block;
-    height: 200px;
-}
-
-.pageBtn:hover{
-    box-shadow: 0 5px 8px 0.2px rgba(165, 165, 165, 0.3);
-}
-
-.pageBtn i {
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    font-size: 50px;
-}
-
-.pageBtn span {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
-}
 
 /* -------------------------------------- HELP button -------------------------------------- */
 .helpBtn {
+    background-color: white;
     text-align: center;
     font-size: 20px;
     position: fixed;
@@ -267,6 +193,180 @@ body {
     border: 0.5px solid rgb(238, 238, 238);
     box-shadow: 0 5px 8px 0.2px rgba(165, 165, 165, 0.3);
     
+}
+
+.list-group-item:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+/* -------------------------------------- HOME PAGE -------------------------------------- */
+
+.container{
+    padding: 50px 100px;
+    /* هذه السطرين عشان لما الأزارير تصير بشكل طولي وبحكم انه لها طول ثابت
+     راح تخرج عن حدود الكونتينر وتخرب شكل السايد بار ،، هذه السطرين ما تخليه يصير كذا ويسوي سكرول  */
+    height: 100vh;
+    overflow: scroll;
+}
+
+/* ...... HEADER ...... */
+.username{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.username p {
+    font-size:16px;
+    line-height: 0.5;
+}
+.username span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.profileAvatar{
+    border-radius: 50%;
+    background-color: rgb(238, 238, 238);
+    width: 90px;
+    height: 90px;
+    background-image: url("../img/Default_user_avatar.png");
+    background-size: cover;
+
+}
+
+/* ...... the 4 buttons  ...... */
+
+.pageBtn{ /* pageBtn is a class for the 4 buttons in the main page */
+    border-radius: 12px;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding: 14px 25px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    height: 200px;
+}
+
+.pageBtn:hover{
+    box-shadow: 0 5px 8px 0.2px rgba(165, 165, 165, 0.3);
+    transform: scale(1.05);
+    color: black;
+}
+
+.pageBtn i {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.pageBtn span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* -------------------------------------- صفحة إنشاء مقطع صوتي -------------------------------------- */
+
+/* ...... The Textarea fiels  ...... */
+
+.TTStxt{
+    margin: 30px;
+    margin-bottom: 50px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    vertical-align: top;
+    resize: none;
+    border: none;
+    box-shadow: 0 5px 12px 1.5px rgba(165, 165, 165, 0.5);
+}
+
+.TTStxt:focus{
+    outline: none; /* to remove the The default style of the browser (the blue outline) */
+}
+
+
+/* ...... The Select menu of the voices ...... */
+
+.selectListDiv{
+    border: none;
+    padding: 0;
+    /* Since we are using absolute property to position the arrows,
+    the outter div needs to have a relative property in it*/
+    position: relative;
+
+}
+
+.selectListDiv i { /* select menu down arrow */
+    position: absolute;
+    left: 15px;
+    bottom: 9px;
+    color: rgb(148, 148, 148);
+}
+
+.ttsVoice{
+    /* to remove the The default style of the browser */
+    -webkit-appearance: none; 
+    appearance: none;
+    -moz-appearance: none;
+
+    padding: 10px 12px;
+    color: rgb(148, 148, 148);
+    border-radius: 12px;
+    border: 0.3px solid rgb(148, 148, 148);
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.ttsVoice:hover{
+    border: 1px solid rgb(148, 148, 148);
+}
+
+.ttsVoice:focus{
+    outline: none; /* to remove the The default style of the browser (the blue outline) */
+}
+
+/* ...... The TTS conversion button ...... */
+
+.convBtn{
+    /* to remove the The default style of the browser */
+    -webkit-appearance: none; 
+    appearance: none;
+    -moz-appearance: none;
+
+    background-color: #C4C4C4;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 12px;
+}
+
+.convBtn:hover{
+    box-shadow: 0 5px 8px 0.2px rgba(165, 165, 165, 0.3);
+    transform: scale(1.02);
+}
+
+/* for mobiles (phones, 600px and down) */
+@media only screen and (max-width: 764px) {
+    .TTStxt{
+        margin-bottom: 35px;
+    }
+    .convBtn {
+        margin-top: 35px;
+  }
 }
 
 .list-group-item:hover{

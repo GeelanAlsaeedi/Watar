@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <title>Watar</title>
+  <meta charset="UTF-8">
+  <!--responsive viewport meta tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!--Our stylesheet-->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- Google icons -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <div class="wrapper"> <!-- the while page is inside it -->
+
+    <!----------------------------------------------- Sidebar ----------------------------------------------->
+    <!-- div For the ENTIRE sidebar -->
+    <nav class="sidebar"> 
+      <!-- div for the header (LOGO) of the sidebar -->
+      <div class="">
+        <div class="sidebarLogo"> <!-- CSS class -->
+          <a href="index.html"><img src="img/Watar.png" alt="وتر" ></a>
+        </div>
+      </div>
+
+      <!-- div for the content of the sidebar -->
+      <ul >
+        
+        <li >
+          <a class="nav-link"  href="index.html">
+            <i class="material-icons-outlined">home</i> <!-- Google class -->
+            <span class="links_name"> الصفحة الرئيسية</span> <!-- CSS class -->
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-link" id="active" href="index.html">
+            <i class="material-icons-outlined">add</i>
+            <span class="links_name"> إنشاء مقطع صوتي</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="index.html">
+            <i class="material-icons-outlined">record_voice_over</i>
+            <span class="links_name"> انسخ صوتك</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="index.html">
+            <i class="material-icons-outlined">volume_up</i>
+            <span class="links_name"> تصفح معرض الأصوات</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="index.html">
+            <i class="material-icons-outlined">favorite_border</i>
+            <span class="links_name"> الأصوات المفضلة</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="index.html">
+            <i class="material-icons-outlined">person_outline</i>
+            <span class="links_name"> الملف الشخصي</span>
+          </a>
+        </li>
+
+      </ul>
+
+      <!-- div for the end (logout) of the sidebar -->
+
+      <div class="sidebarEnd">
+
+        <ul>
+          <li >
+            <a class="nav-link" href="#">
+              <i class="material-icons-outlined">logout</i> <!-- Google class -->
+              <span class="links_name"> تسجيل الخروج</span> <!-- CSS class -->
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          Copyright &copy; WATAR
+          <script>document.write(new Date().getFullYear());</script>
+        </p>
+      </div>
+
+    </nav>
+
+    <!-----------------------------------------------  page content ----------------------------------------------->
+        <!-- container for the padding -->
+        <div class="container">
+
+            <!-------- HEADER -------->
+            <div class="row justify-content-between" style="height: 15%;">
+              <!-- the right side -->
+              <div class="col-6">
+                <div class="username">
+                  <p> أهلًا وسهلًا </p>
+                  <span> فاطمة جبر </span>
+                </div>
+              </div>
+              <!-- the left side -->
+              <div class="col-6">
+                <div class="profile">
+                  <a href="#">
+                    <div class="profileAvatar">
+                    </div>
+                  </a>
+                </div>
+              </div>
+      
+            </div>
+      
+            <!-------- Div for the [text field, voices list and conversion button] -------->
+            <form action="" method="">
+                <div class="row align-items-center" style="height: 85%; ">
+                    <!-- it has one column that will nest the other 2 rows-->
+                    <div class="col-12">
+              
+                          <!-- first nested row for the [text field]-->
+                        <div class="row  justify-content-center " >
+                            <textarea name="TTStxt" placeholder="أدخل النص هنا .." class="col-12 TTStxt"></textarea>
+                        </div>
+
+                        <!-- second nested row for the [voices list and conversion button]]-->
+                        <div class="row  justify-content-between" >
+                            <!-- This outter div wrap the select menu and helps in addind the down arrow icons-->
+                            <div class="selectListDiv col-md-7">
+                                <i class="material-icons-outlined">expand_more</i>
+                                <select name="voice" class="ttsVoice"> 
+                                    <option disabled selected>اختر صوت من قائمة المفضلة </option> 
+                                    <option value="">سارة (أنثى)</option> 
+                                    <option value="">محمد (ذكر)</option> 
+                                    <option value="">عمر (طفل)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="col-md-4 convBtn"> تحويل النص إلى صوت</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+      
+            <!-------- HELP button -------->
+            <div class="helpBtn" data-toggle="collapse" data-target="#helpOpt" >
+              <a href="#">
+                <div>
+                  ؟
+                </div> 
+              </a>
+            </div>
+      
+            <ul class="collapse list-group" id="helpOpt">
+              <a href="#" id="top"> <li class="list-group-item">الأسئلة الشائعة</li></a>
+              <a href="#" id="bottom"><li class="list-group-item">تواصل معنا</li></a>
+            </ul>
+      
+          </div>
+      
+        </div>
+      
+      
+        <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+          crossorigin="anonymous"></script>
+      
+      </body>
+      
+      </html>
