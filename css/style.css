@@ -374,7 +374,17 @@ body {
 }
 
 /* -------------------------------------- Create Account Page -------------------------------------- */
-button{
+.btn{
     width: 100%;
     height: 45px;
+    border-radius: 15px;
+    font-size:20px;
+}
+ a{
+text-decoration: underline;
+}
+
+.form-control{
+    border-radius: 15px;
+    height: 40px;
 }
