@@ -36,7 +36,7 @@
       <ul >
         
         <li >
-          <a class="nav-link" id="active" href="index.html">
+          <a class="nav-link" href="index.html">
             <i class="material-icons-outlined">home</i> <!-- Google class -->
             <span class="links_name"> الصفحة الرئيسية</span> <!-- CSS class -->
           </a>
@@ -50,7 +50,7 @@
         </li>
 
         <li>
-          <a class="nav-link" href="voice_cloning.html">
+          <a class="nav-link" id="active" href="voice_cloning.html">
             <i class="material-icons-outlined">record_voice_over</i>
             <span class="links_name"> انسخ صوتك</span>
           </a>
@@ -125,38 +125,35 @@
 
       </div>
 
-      <!-------- buttons row (nested)-------->
+      <!-------- ROOT row for the content under the HEADER -------->
       <div class="row align-items-center" style="height: 85%; ">
-        <!-- it has one column that will nest the other 2 rows-->
+        <!-- it has one column that will nest other 3 rows-->
         <div class="col-12">
 
-          <!-- first nested row: for the upper buttons-->
-          <div class="row  justify-content-between" >
-
-            <a class="col-md-5 mt-5  pageBtn" href="tts.html">
-                <i class="material-icons-outlined">add</i>
-                <span>إنشاء محتوى صوتي</span> 
-            </a>
-
-            <a class="col-md-5 mt-5 pageBtn" href="voice_cloning.html">
-              <i class="material-icons-outlined">record_voice_over</i>
-              <span>انسخ صوتك</span>
-            </a>
+          <!-- 1st nested row: for Text div-->
+          <div class="row  justify-content-center" >
+              <div class="col-12 txtDiv">
+                  <div class="row justify-content-center vcInst">
+                      سجل صوتك أثناء قراءة النص التالي :
+                  </div>
+                  <div class="row justify-content-center vcTxt">
+                    أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغأبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ
+                    أبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغأبجد هوز حطي كلمن سعفص قرشت ثخذ ضظغ
+                </div>
+              </div>
           </div>
 
-          <!-- second nested row: for the lower buttons-->
-          <div class="row  justify-content-between" >
-
-            <a class="col-md-5 mt-5 pageBtn" href="#">
-                <i class="material-icons-outlined">volume_up</i>
-                <span>تصفح معرض الأصوات</span>
-            </a>
-
-            <a class="col-md-5 mt-5 pageBtn" href="#">
-              <i class="material-icons-outlined">favorite_border</i>
-              <span>الأصوات المفضلة</span>
-            </a>
+          <!-- 2nd nested row: for the Recording button-->
+          <div class="row  justify-content-center" >
+            <button class="recBtn"> بدء التسجيل </button>
           </div>
+
+          <!-- 3rd nested row: for the Progress bar-->
+          <div class="row  justify-content-center" >
+              <p class="progressTxt">لقد سجلت ٣ من أصلا ١٠٠ تسجيلات (٣٪) </p>
+              <div class="progressBar" style="--width: 10;"></div>
+        </div>
+
         </div>
       </div>
 

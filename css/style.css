@@ -265,7 +265,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px;
+    padding: 15px;
     font-size: 50px;
 }
 
@@ -273,9 +273,10 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 10px;
+    padding: 20px;
     font-size: 30px;
     font-weight: bold;
+    color: rgb(54, 54, 54);
 }
 
 /* -------------------------------------- صفحة إنشاء مقطع صوتي -------------------------------------- */
@@ -369,8 +370,82 @@ body {
   }
 }
 
-.list-group-item:hover{
-    background-color: rgb(238, 238, 238);
+/* -------------------------------------- Voice cloning Page -------------------------------------- */
+
+.txtDiv {
+    margin: 30px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    vertical-align: middle;
+    border: none;
+    box-shadow: 0 5px 12px 1.5px rgba(165, 165, 165, 0.5);
+}
+
+.vcInst { /* "vc" means: voice cloning, class for the voice cloning Instruction */ 
+    color: rgb(148, 148, 148);
+    margin: 10px;
+
+}
+
+.vcTxt { /* "vc" means: voice cloning, class for the voice cloning Text to read */ 
+    color:black;
+    padding: 30px;
+    text-align: center;
+}
+
+.recBtn{ /* class for the Recording button */
+    /* to remove the The default style of the browser */
+    -webkit-appearance: none; 
+    appearance: none;
+    -moz-appearance: none;
+
+    background-color: #C4C4C4;
+    border-radius: 12px;
+    border: none;
+    padding: 12px 20px;
+    width: 25%;
+}
+
+.recBtn:hover{
+    box-shadow: 0 5px 8px 0.2px rgba(165, 165, 165, 0.3);
+    transform: scale(1.02);
+}
+
+@media only screen and (max-width: 764px) {
+    .recBtn {
+        width: 100%;
+  }
+}
+
+.progressTxt{
+    font-size: 12px;
+    color: rgb(148, 148, 148);
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.progressBar{
+    width: 100%;
+    height: 0.5em;
+    background-color: rgb(228, 228, 228) ;
+    border-radius: 0.5em;
+    position: relative;
+}
+
+.progressBar::after{
+    content: '';
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #C4C4C4;
+    border-radius: 0.5em;
+    min-width: 1%;
+    max-width: 100%;
+    /* to Adjust the width of the progress from HTML file via the Attribute style="--width: ;"> */
+    width: calc(var(--width,0)*1%); 
 }
 
 /* -------------------------------------- Create Account Page -------------------------------------- */
@@ -380,11 +455,15 @@ body {
     border-radius: 15px;
     font-size:20px;
 }
- a{
+.underlineLink {
 text-decoration: underline;
 }
 
 .form-control{
     border-radius: 15px;
     height: 40px;
+}
+
+.list-group-item:hover{
+    background-color: rgb(238, 238, 238);
 }
