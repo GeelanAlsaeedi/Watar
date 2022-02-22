@@ -447,6 +447,172 @@ body {
     /* to Adjust the width of the progress from HTML file via the Attribute style="--width: ;"> */
     width: calc(var(--width,0)*1%); 
 }
+/* -------------------------------------- Contact Us page -------------------------------------- */
+
+.fullHeight{
+    height: 100vh;
+}
+
+/* ............ IMAGE side (left) ............ */
+
+.imgSide {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    /* these 2 Properties to center the image verticly, 
+    Because bootstrap "align-items-center" did not work on this side*/
+    display:flex;
+    align-items:center;
+}
+
+.imgSide img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 764px) {
+    .imgSide {
+        display: none;
+  }
+}
+
+/* ............ FORM side (right) ............ */
+
+.contactForm{
+    height: 100%;
+    padding: 100px 150px;
+    text-align: center;
+    overflow: scroll;
+    line-height: 20px;
+}
+
+.contactForm h1 {
+    margin-bottom: 50px;
+}
+/* to change the color of the placeholder */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(148, 148, 148);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(148, 148, 148);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(148, 148, 148);
+  }
+
+/* ...... (1) عنوان الرسالة + (4) البريد الإلكتروني  ...... */
+
+.issueInput {
+    /* to remove the The default style of the browser */
+    -webkit-appearance: none; 
+    appearance: none;
+    -moz-appearance: none;
+    
+    width: 100%;
+    padding: 10px 12px;
+    color: rgb(148, 148, 148);
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+.issueInput:focus{
+    outline: none; /* to remove the The default style of the browser (the blue outline) */
+}
+
+/* ...... (2) نوع القضية أو المسألة ...... */
+
+.selectIssueDiv{
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+    /* Since we are using absolute property to position the arrows,
+    the outter div needs to have a relative property in it*/
+    position: relative;
+
+}
+
+.selectIssueDiv i { /* select menu down arrow */
+    position: absolute;
+    left: 15px;
+    bottom: 9px;
+    color: rgb(0, 0, 0)
+}
+
+.issue{
+    /* to remove the The default style of the browser */
+    -webkit-appearance: none; 
+    appearance: none;
+    -moz-appearance: none;
+
+    padding: 10px 12px;
+    color: rgb(148, 148, 148);
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.issue:focus{
+    outline: none; /* to remove the The default style of the browser (the blue outline) */
+}
+
+/* ...... (3) الرسالة ...... */
+
+.issueMsg{
+    /* to remove the The default style of the browser */
+    -webkit-appearance: none; 
+    appearance: none;
+    -moz-appearance: none;
+    
+    width: 100%;
+    padding: 10px 12px;
+    color: rgb(148, 148, 148);
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-bottom: 50px;
+    vertical-align: bottom;
+}
+
+.issueMsg::placeholder {
+    text-align:right;
+    transform: translateY(20px);
+  }
+
+.issueMsg:focus{
+    outline: none; /* to remove the The default style of the browser (the blue outline) */
+}
+
+/* ...... (5) إرسال ...... */
+
+.sendIssue{
+    /* to remove the The default style of the browser */
+    -webkit-appearance: none; 
+    appearance: none;
+    -moz-appearance: none;
+
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 30%;
+    
+}
+
+@media only screen and (max-width: 764px) {
+    .sendIssue {
+        width: 100%;
+  }
+}
+
 
 /* -------------------------------------- Create Account Page -------------------------------------- */
 .btn{
