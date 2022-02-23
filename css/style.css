@@ -451,6 +451,7 @@ body {
 
 .fullHeight{
     height: 100vh;
+    text-align: center;
 }
 
 /* ............ IMAGE side (left) ............ */
@@ -613,8 +614,54 @@ body {
   }
 }
 
+/* -------------------------------------- FAQs Page -------------------------------------- */
+
+.FAQ-root-col{
+    text-align: center;
+}
+
+.FAQ-root-col h1 {
+    font-size: 50px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.QA-outer{
+    width: 100%;
+    background-color: #FAF8F8;
+    margin: 15px 0;
+}
+
+.QusetionDiv {
+    text-align: right;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.AnswerDiv{
+    text-align: right;
+    padding: 15px;
+}
+
+
+.QusetionDiv::after{
+    content: '\2212';
+    width: 35px;
+    font-size: 25px;
+    font-weight:normal;
+    text-align: center;
+    float: left;
+}
+
+.QusetionDiv.collapsed::after{
+    content: "\002B";
+    font-weight:normal;
+}
 
 /* -------------------------------------- Create Account Page -------------------------------------- */
+
 .btn{
     width: 100%;
     height: 45px;
