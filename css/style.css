@@ -199,6 +199,14 @@ body {
     background-color: rgb(238, 238, 238);
 }
 
+.list-group i {
+    color: rgb(148, 148, 148);
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 3px;
+    
+}
+
 /* -------------------------------------- HOME PAGE -------------------------------------- */
 
 .container{
@@ -630,6 +638,8 @@ body {
     width: 100%;
     background-color: #FAF8F8;
     margin: 15px 0;
+    cursor: pointer;
+
 }
 
 .QusetionDiv {
