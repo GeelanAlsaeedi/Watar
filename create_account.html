@@ -2,7 +2,7 @@
 <html dir="rtl" lang="ar">
 
 <head>
-    <title>إنشاء حساب - وَتَر</title>
+    <title>إنشاءحساب - وَتَر</title>
     <meta charset="UTF-8">
     <!--responsive viewport meta tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,51 +18,50 @@
 </head>
 
 <body>
+
     <div class="container-fluide">
-        <div class="row bg-light" >
-            <div class="col-7 align-self-center bg-white">
-                <form action="" target="_self" autocomplete="on" style="padding: 5% 10% 10% 10%;">
-                    <h1>إنشاء حساب جديد</h1><br>
+        <div class="row align-items-center fullHeight" >
 
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for=""> الاسم</label>
-                                <input class="form-control" type="text" required>
-                            </div>
+            <!------------  The Form Side (right)------------>
+            <div class="col-md-8 createAcountForm">
+                <form action="" target="_self" autocomplete="on">
+
+                    <h1 class="creatAcountHeder">إنشاء حساب جديد</h1><br>
+
+                    <!-- 1) الاسم + اسم المستخدم-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="inputLabel">الاسم</p>
+                            <input class="txtInput" type="text" required>
                         </div>
 
-                        <div class="col">
-                            <div class="form-group">
-                                <label for=""> اسم المستخدم</label>
-                                <input class="form-control" type="text" required>
-                            </div>
+                        <div class="col-md-6">
+                            <p class="inputLabel">اسم المستخدم</p>
+                            <input class="txtInput" type="text" required>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="">البريد الإلكتروني</label>
-                        <input class="form-control" type="email" required>
-                    </div>
+                    <!-- 2) البريد الإلكتروني-->
+                    <p class="inputLabel">البريد الإلكتروني</p>
+                    <input class="txtInput" type="email" required>
 
-                    <div class="form-group">
-                        <label for="">كلمة المرور</label>
-                        <input class="form-control" type="password" required>
-                    </div>
+                    <!-- 3) كلمة المرور-->
+                    <p class="inputLabel">كلمة المرور</p>
+                    <input class="txtInput" type="password" required>
 
-                    <div class="form-group">
-                        <label for=""> تأكيد كلمة المرور </label>
-                        <input class="form-control" type="password" required>
-                    </div>
+                    <!-- 4) تأكيد كلمة المرور-->
+                    <p class="inputLabel">تأكيد كلمة المرور </p>
+                    <input class="txtInput" type="password" required>
 
-                    <div class="form-group">
-                        <label for=""> رقم الهاتف </label>
-                        <input class="form-control" type="tel" placeholder="+966" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{4}" dir="ltr" required>
-                    </div>
+                    <!-- 5) كلمة المرور-->
+                    <p class="inputLabel">رقم الهاتف </p>
+                    <input class="txtInput" type="tel" placeholder="+966" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{4}" dir="ltr" required>
 
-                    <div class="form-group">
-                        <label for="">البلد</label>
-                        <select class="form-control" name="" id="" required>
+                    <!-- 6) البلد -->
+                    <p class="inputLabel">البلد</p>
+                    <div class="selectListDiv">
+                        <i class="material-icons-outlined">expand_more</i>
+                        <select  class="ttsVoice" name="" id="" required>
                             <option value="">الأردن</option>
                             <option value="">الإمارات</option>
                             <option value="">البحرين</option>
@@ -88,40 +87,40 @@
                         </select>
                     </div>
 
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="">الجنس</label>
-                                <select class="form-control" name="" id="" required>
+                    <!-- 7) الجنس + تاريخ الميلاد -->
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p class="inputLabel">الجنس</p>
+                            <div class="selectListDiv">
+                                <i class="material-icons-outlined">expand_more</i>
+                                <select class="ttsVoice" required>
                                     <option value="female">أنثى</option>
                                     <option value="male">ذكر</option>
                                 </select>
                             </div>
                         </div>
 
-                        <div class="col">
-                            <div class="form-group">
-                                <label for=""> تاريخ الميلاد</label>
-                                <input class="form-control" type="date" id="birthday" name="" required>
-                            </div>
+                        <div class="col-md-6">
+                                <p class="inputLabel">تاريخ الميلاد</p>
+                                <input class="txtInput" type="date" required>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-secondary mt-3">إنشاء حساب</button>
-                    <div class="text-center mt-2">
-                        <div class="d-inline">
-                            <p class="d-inline text-muted">لديك حساب؟</p>
-                        </div>
-                        <div class="d-inline mr-2"><a href="login.html" class="underlineLink" target="_self">تسجيل الدخول</a></div>
-                    </div>
+                    <!-- 8) زر إنشاء حساب -->
+                    <button type="submit" class="logBtn">إنشاء حساب</button>
+
+                    <!-- 9) االتبديل إلى صفحة تسجيل الدخول -->
+                    <span>لديك حساب؟</span>
+                    <a class="logSwitch" href="login.html" target="_self">سجّل الدخول</a>
                 </form>
             </div>
 
-            <div class="col-5 align-self-center">
-                    <div class="text-center">
-                        <img src=".\img\Watar.png" class="" alt="...">
-                    </div> 
+             <!------------  The Image Side (left): hidden in mobile version ------------>
+            <div class="col-md-4 imgSide">
+                <img src="img\Watar.png">
             </div>
+
         </div>
     </div>
 

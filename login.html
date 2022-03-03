@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html>
 
 <head>
     <title>تسجيل الدخول - وَتَر</title>
@@ -18,39 +18,44 @@
 </head>
 
 <body>
+
     <div class="container-fluide"> 
-        <div class="row" >
-                <div class="col-7 align-self-center">
-                    <form action="" target="_self" autocomplete="on" style="padding: 5% 10% 10% 10%;">
+        <div class="row align-items-center fullHeight">
+
+                <!------------  The Form Side (right)------------>
+                <div class="col-md-8 contactForm">
+
+                    <form action="" target="_self" autocomplete="on">
+
                         <h1>تسجيل الدخول</h1><br>
-    
-                        <div class="form-group">
-                            <label for="">البريد الإلكتروني</label>
-                            <input class="form-control" type="email" required>
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="">كلمة المرور</label>
-                            <input class="form-control" type="password" required>
-                        </div>
-    
-                        <div class=""><a href="reset_password.html" class="underlineLink" target="_self">هل نسيت كلمة المرور؟</a></div>
-    
-                        <button type="submit" class="btn btn-secondary mt-3">تسجيل الدخول</button>
-                        <div class="text-center mt-2">
-                            <div class="d-inline">
-                                <p class="d-inline text-muted">لا تمتلك حساب؟</p>
-                            </div>
-                            <div class="d-inline mr-2"><a href="create_account.html" class="underlineLink" target="_self">إنشاء حساب جديد</a></div>
-                        </div>
+                        
+                        <!-- 1) البريد الإلكتروني -->
+                        <p class="inputLabel">البريد الإلكتروني</p>
+                        <input class="txtInput" type="email" required>
+                        
+                        <!-- 2) كلمة المرور -->
+                        <p class="inputLabel">كلمة المرور</p>
+                        <input class="txtInput" type="password" required>
+                        
+                        <!-- 3) هل نسيت كلمة المرور -->
+                        <p class="forgestPass"><a href="reset_password.html"  target="_self">هل نسيت كلمة المرور؟</a></p>
+                        
+                        <!-- 4) زر تسجيل الدخول -->
+                        <button class="logBtn" type="submit" >تسجيل الدخول</button><br>
+                        
+                        <!-- 5) االتبديل إلى صفحة إنشاء حساب -->
+                        <span>لا تمتلك حساب؟</span>
+                        <a class="logSwitch" href="create_account.html" target="_self">إنشاء حساب جديد</a>
+                        
                     </form>
+
                 </div>
-    
-                <div class="col-5 bg-light" >
-                        <div class="text-center">
-                            <img src=".\img\Watar.png" class="" alt="...">
-                    </div> 
+
+                <!------------  The Image Side (left): hidden in mobile version ------------>
+                <div class="col-md-4 imgSide">
+                    <img src="img\Watar.png">
                 </div>
+
         </div>
     </div>
 

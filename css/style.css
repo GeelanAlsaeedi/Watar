@@ -203,9 +203,19 @@ body {
     color: rgb(148, 148, 148);
     font-size: 20px;
     cursor: pointer;
-    margin-bottom: 3px;
+    margin-bottom: 8px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 5px 8px 0.2px rgba(165, 165, 165, 0.3);
+    border-radius: 50%;
+    border: 0.5px solid rgb(238, 238, 238);
+    text-align: center;
+    padding-top: 1px;
     
 }
+
+
 
 /* -------------------------------------- HOME PAGE -------------------------------------- */
 
@@ -487,9 +497,9 @@ body {
 
 /* ............ FORM side (right) ............ */
 
-.contactForm{
+.contactForm{ /*This is used to the form side of "contact us" page and "login" page*/
     height: 100%;
-    padding: 100px 150px;
+    padding: 100px 120px;
     text-align: center;
     overflow: scroll;
     line-height: 20px;
@@ -670,23 +680,132 @@ body {
     font-weight:normal;
 }
 
+/* -------------------------------------- Login Page -------------------------------------- */
+
+.txtInput{
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 0.3px solid rgb(148, 148, 148);
+    cursor: pointer;
+    width: 100%;
+}
+
+.txtInput:hover{
+    border: 1px solid rgb(148, 148, 148);
+}
+
+.inputLabel {
+    text-align: right; 
+    color:black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.forgestPass{
+    width: 100%;
+    text-align: right; 
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.logBtn{
+    background-color: rgb(148, 148, 148);
+    color: white;
+    border: 0.3px solid rgb(148, 148, 148);
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.logBtn:hover{
+    box-shadow: 0 5px 8px 0.2px rgba(165, 165, 165, 0.3);
+    transform: scale(1.02);
+}
+
+.logSwitch{
+    text-decoration: underline;
+}
+
 /* -------------------------------------- Create Account Page -------------------------------------- */
 
-.btn{
+.createAcountForm{ /*This is used to the form side of "contact us" page and "login" page*/
+    height: 100%;
+    padding: 50px 120px;
+    text-align: center;
+    overflow: scroll;
+    line-height: 20px;
+}
+
+.creatAcountHeder{
+    text-align: center;
+    margin: 0 !important;
+}
+
+/* -------------------------------------- Profile Page -------------------------------------- */
+
+.profileLabel{
+    text-align: right; 
+    color:rgb(148, 148, 148);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.profileInput{
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 0.3px solid rgb(148, 148, 148);
+    cursor: pointer;
     width: 100%;
-    height: 45px;
-    border-radius: 15px;
-    font-size:20px;
-}
-.underlineLink {
-text-decoration: underline;
 }
 
-.form-control{
-    border-radius: 15px;
-    height: 40px;
+.profileInput:hover{
+    border: 1px solid rgb(148, 148, 148);
 }
 
-.list-group-item:hover{
-    background-color: rgb(238, 238, 238);
+/* to change the color of the placeholder */
+.profileInput::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  .profileInput:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:black;
+  }
+  
+  .profileInput::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+  }
+
+
+
+.clonedVoiceSample{
+    color: black;
+    padding: 10px 12px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.clonedVoiceSample:hover {
+    text-decoration: none;
+}
+
+.clonedVoiceSample i {
+    padding-left: 15px;
+}
+
+.editBtn{
+    background-color: rgb(148, 148, 148);
+    color: white;
+    border: 0.3px solid rgb(148, 148, 148);
+    border-radius: 12px;
+    padding: 10px 12px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px ;
 }

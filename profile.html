@@ -128,51 +128,45 @@
                 </div>
 
             </div>
-            <!-------- edit profile -------->
+            <!-------- Profile information -------->
             <div class="row justify-content-center">
-                <div class="col-9">
+                <div class="col-md-9">
+
                     <form action="" target="_self" autocomplete="on" style="padding-top:5%;">
 
-                        <div class="form-row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for=""> الاسم</label>
-                                    <input class="form-control" type="text" required>
-                                </div>
+                        <div class="row">
+                            <!-- 1) الاسم -->
+                            <div class="col-md-6">
+                                <p class="profileLabel">الاسم</p>
+                                <input class="profileInput" type="text" required placeholder="فاطمة">
                             </div>
 
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for=""> اسم المستخدم</label>
-                                    <input class="form-control" type="text" required>
-                                </div>
+                            <!-- 2) اسم المستخدم -->
+                            <div class="col-md-6">
+                                <p class="profileLabel">اسم المستخدم</p>
+                                <input class="profileInput" type="text" required placeholder="nerd2030">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="">البريد الإلكتروني</label>
-                            <input class="form-control" type="email" required>
-                        </div>
+                        <!-- 3) البريد الإلكتروني -->
+                        <p class="profileLabel">البريد الإلكتروني</p>
+                        <input class="profileInput" type="email" required placeholder="fatimah@uqu.sa">
 
-                        <div class="form-group">
-                            <label for="">كلمة المرور</label>
-                            <input class="form-control" type="password" required>
-                        </div>
+                        <!-- 4) كملة المرور -->
+                        <p class="profileLabel">كلمة المرور</p>
+                        <input class="profileInput" type="password" required placeholder="************">
 
-                        <div class="form-group">
-                            <label for=""> تأكيد كلمة المرور </label>
-                            <input class="form-control" type="password" required>
-                        </div>
+                        <!-- 5) رقم الهاتف -->
+                        <p class="profileLabel"> رقم الهاتف </p>
+                        <input class="profileInput" type="tel" placeholder="0561455960"
+                                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{4}" required>
 
-                        <div class="form-group">
-                            <label for=""> رقم الهاتف </label>
-                            <input class="form-control" type="tel" placeholder="+966"
-                                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{4}" dir="ltr" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="">البلد</label>
-                            <select class="form-control" name="" id="" required>
+                        <!-- 6) البلد -->
+                        <p class="profileLabel">البلد</p>
+                        <div class="selectListDiv">
+                            <i class="material-icons-outlined">expand_more</i>
+                            <select  class="ttsVoice" name="" id="" required>
+                                <option value="" selected >السعودية</option>
                                 <option value="">الأردن</option>
                                 <option value="">الإمارات</option>
                                 <option value="">البحرين</option>
@@ -180,7 +174,6 @@
                                 <option value="">الجزائر</option>
                                 <option value="">جزر القمر</option>
                                 <option value="">جيبوتي</option>
-                                <option value="" selected>السعودية</option>
                                 <option value="">السودان</option>
                                 <option value="">سوريا</option>
                                 <option value="">الصومال</option>
@@ -198,37 +191,43 @@
                             </select>
                         </div>
 
-                        <div class="form-row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="">الجنس</label>
-                                    <select class="form-control" name="" id="" required>
+                        <div class="row">
+                            <!-- 7) الجنس -->
+                            <div class="col-md-6">
+                                <p class="profileLabel">الجنس</p>
+                                <div class="selectListDiv">
+                                    <i class="material-icons-outlined">expand_more</i>
+                                    <select class="ttsVoice" required>
                                         <option value="female">أنثى</option>
                                         <option value="male">ذكر</option>
                                     </select>
                                 </div>
                             </div>
-
-                            <div class="col">
+                            <!-- 8) تاريخ الميلاد -->
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for=""> تاريخ الميلاد</label>
-                                    <input class="form-control" type="date" id="birthday" name="" required>
+                                    <p class="profileLabel"> تاريخ الميلاد</p>
+                                    <input class="profileInput" type="date" id="birthday" name="" required>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-row">
-                            <div class="col">
-                                <div class="row justify-content-center mt-3">
-                                    <i class="material-icons-outlined">volume_up</i>
-                                    <span class="links_name mr-2"> معلومات صوتك</span>
-                                </div>
+                        <div class="row ">
+                            <!-- 9) زر لسماع صوته المنسوخ -->
+                            <div class="col-md-6"  >
+                                    <a class="clonedVoiceSample" href="#">
+                                        <i class="material-icons-outlined">volume_up</i>
+                                        <span class=""> معلومات صوتك</span>
+                                    </a>
+                            </div>
+                            
+                            <!-- 10) زر لتعديل معلومات الحساب  -->
+                            <div class="col-md-6">
+                                <button type="submit" class="editBtn">تعديل الملف الشخصي </button>
                             </div>
 
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary mt-2">تعديل الملف الشخصي </button>
-                            </div>
                         </div>
+                        
                     </form>
                 </div>
 
