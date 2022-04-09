@@ -2,7 +2,7 @@
 <html dir="rtl" lang="ar">
 
 <head>
-  <title>الصفحة الرئيسية - وَتَر </title>
+  <title>معرض الأصوات - وَتَر </title>
   <meta charset="UTF-8">
   <!--responsive viewport meta tag-->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,7 +36,7 @@
       <ul >
         
         <li >
-          <a class="nav-link" id="active" href="index.html">
+          <a class="nav-link" href="index.html">
             <i class="material-icons-outlined">home</i> <!-- Google class -->
             <span class="links_name"> الصفحة الرئيسية</span> <!-- CSS class -->
           </a>
@@ -57,7 +57,7 @@
         </li>
 
         <li>
-          <a class="nav-link" href="#">
+          <a class="nav-link" id="active" href="galary.html">
             <i class="material-icons-outlined">volume_up</i>
             <span class="links_name"> تصفح معرض الأصوات</span>
           </a>
@@ -102,10 +102,12 @@
 
     <!-----------------------------------------------  page content ----------------------------------------------->
     <!-- container for the padding -->
-    <div class="container">
+    <div class="container-fluid">
 
-      <!-------- HEADER -------->
-      <div class="row justify-content-between" style="height: 15%;">
+      <!-- ................. HEADER ................. -->
+
+      <!----------- USER INFO ---------->
+      <div class="row justify-content-between LRpadding100px" style="height: 15%;">
         <!-- the right side -->
         <div class="col-6">
           <div class="username">
@@ -122,10 +124,34 @@
             </a>
           </div>
         </div>
-
       </div>
 
-      <!-------- buttons row (nested)-------->
+      <!-------- SEARCH SECTION -------->
+       <form action="" method="">
+                <div class="row  justify-content-between LRpadding100px" >
+                    <!-- text filed side 75%-->                  
+                    <div class="col-8">
+                      <div class="row">
+                        <input class="searchInput" type="text" placeholder="بحث" required>
+                      </div>
+                      <div class="row">
+                        <!-- Radio buttons for the search type-->
+                        <input type="radio" id="name" name="searchBy" value="name">
+                        <label for="name">بالاسم</label>
+                        <input type="radio" id="age" name="searchBy" value="age">
+                        <label for="age">بالعمر</label>
+                        <input type="radio" id="gender" name="searchBy" value="gender">
+                        <label for="gender">بالجنس</label>
+                      </div>
+                    </div>
+                    <!-- button side 25%--> 
+                    <button type="submit" class="col-3 searchBtn">بحث</button>
+                </div>
+
+    </form>
+
+      <!-- ................. The voice sample CARDS ................. --> 
+      
       <div class="row align-items-center" style="height: 85%; ">
         <!-- it has one column that will nest the other 2 rows-->
         <div class="col-12">
@@ -160,7 +186,8 @@
         </div>
       </div>
 
-      <!-------- HELP button -------->
+      <!-- ................. HELP button ................. -->
+
       <div class="helpBtn" data-toggle="collapse" data-target="#helpOpt" >
         <a href="#">
           <div>
