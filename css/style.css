@@ -219,7 +219,7 @@ body {
 
 /* -------------------------------------- HOME PAGE -------------------------------------- */
 
-.container{
+.container ,.container-fluid{
     padding: 50px 100px;
     /* هذه السطرين عشان لما الأزارير تصير بشكل طولي وبحكم انه لها طول ثابت
      راح تخرج عن حدود الكونتينر وتخرب شكل السايد بار ،، هذه السطرين ما تخليه يصير كذا ويسوي سكرول  */
@@ -810,9 +810,11 @@ body {
     margin-top: 20px ;
 }
 
-/* -------------------------------------- Galary Page -------------------------------------- */
+/* -------------------------------------- [ Galary Page ] -------------------------------------- */
 
-/* ............ SEARCH seaction............ */
+/* .................................... SEARCH seaction .................................... */
+
+/* ----- search text field styling ----- */
 .searchInput{
     padding: 10px 12px;
     border-radius: 9px;
@@ -826,6 +828,7 @@ body {
     outline: none; /* to remove the The default style of the browser (the blue outline) */
 }
 
+/* ----- search button styling ----- */
 .searchBtn{
     /* to remove the The default style of the browser */
     -webkit-appearance: none; 
@@ -843,8 +846,56 @@ body {
 .searchBtn:hover{
     box-shadow: 0 5px 8px 0.2px rgba(165, 165, 165, 0.3);
 }
+ /* ----- test : to be removed !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ----- */
+ .b{ 
+     border-bottom: 0.5px solid rgb(238, 238, 238); ;
+ }
 
-.LRpadding100px{
-    padding: 0px 100px;
+ .paddingBottom30px{ /* this padding is used in the header for the USER-INFO section and the SEARCH section */
+     padding-bottom: 30px;
+ }
 
+ /* ----- search by radio button styling ----- */
+.radio-container{ /* container for all the radio buttons */
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+input[type=radio]{ /* to hide the defualt styling of the radio button */
+    display: none;
+}
+
+.radio-label{
+    position: relative;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.radio-label::before{ /* to create the circles */
+    content: "";
+    border: 1px  solid rgb(148, 148, 148);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -8px 10px;
+    margin-right: 0;
+}
+
+.radio-label::after{ /* to create the checked mark: but will be hidden initially */
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(148, 148, 148,0);
+    right: 5px;
+    top: 19px;
+    margin: -8px 10px;
+    margin-right: 0;
+}
+
+input[type=radio]:checked + .radio-label::after { /* to make the checked mark visible when active */
+    background: rgba(148, 148, 148,1);
 }

@@ -107,7 +107,7 @@
       <!-- ................. HEADER ................. -->
 
       <!----------- USER INFO ---------->
-      <div class="row justify-content-between LRpadding100px" style="height: 15%;">
+      <div class="row justify-content-between paddingBottom30px" style="height: 20%;">
         <!-- the right side -->
         <div class="col-6">
           <div class="username">
@@ -127,63 +127,53 @@
       </div>
 
       <!-------- SEARCH SECTION -------->
-       <form action="" method="">
-                <div class="row  justify-content-between LRpadding100px" >
-                    <!-- text filed side 75%-->                  
-                    <div class="col-8">
-                      <div class="row">
-                        <input class="searchInput" type="text" placeholder="بحث" required>
-                      </div>
-                      <div class="row">
-                        <!-- Radio buttons for the search type-->
-                        <input type="radio" id="name" name="searchBy" value="name">
-                        <label for="name">بالاسم</label>
-                        <input type="radio" id="age" name="searchBy" value="age">
-                        <label for="age">بالعمر</label>
-                        <input type="radio" id="gender" name="searchBy" value="gender">
-                        <label for="gender">بالجنس</label>
-                      </div>
-                    </div>
-                    <!-- button side 25%--> 
-                    <button type="submit" class="col-3 searchBtn">بحث</button>
-                </div>
+      <form action="" method="">
+        <div class="row  justify-content-between paddingBottom30px b" >
+            <!-- text filed side 75%-->                  
+            <div class="col-8">
+              <div class="row">
+                <input class="searchInput" type="text" placeholder="بحث" required>
+              </div>
+              <div class="row radio-container">
+                <!-- Radio buttons for the search type-->
+                <input type="radio" id="name" name="searchBy" value="name" class="searchBy">
+                <label for="name" class="radio-label">بالاسم</label>
+                <input type="radio" id="age" name="searchBy" value="age" class="searchBy">
+                <label for="age" class="radio-label">بالعمر</label>
+                <input type="radio" id="gender" name="searchBy" value="gender" class="searchBy">
+                <label for="gender" class="radio-label">بالجنس</label>
+              </div>
+            </div>
+            <!-- button side 25%--> 
+            <button type="submit" class="col-3 searchBtn">بحث</button>
+        </div>
 
-    </form>
+      </form>
 
-      <!-- ................. The voice sample CARDS ................. --> 
+      <!-- ................. The voices CARDS ................. --> 
       
-      <div class="row align-items-center" style="height: 85%; ">
-        <!-- it has one column that will nest the other 2 rows-->
-        <div class="col-12">
+      <div class="row align-items-center" style="height: 80%; ">
 
-          <!-- first nested row: for the upper buttons-->
-          <div class="row  justify-content-between" >
-
-            <a class="col-md-5 mt-5  pageBtn" href="tts.html">
+            <a class="col-md-4 mt-5  pageBtn" href="tts.html">
                 <i class="material-icons-outlined">add</i>
                 <span>إنشاء محتوى صوتي</span> 
             </a>
 
-            <a class="col-md-5 mt-5 pageBtn" href="voice_cloning.html">
+            <a class="col-md-4 mt-5 pageBtn" href="voice_cloning.html">
               <i class="material-icons-outlined">record_voice_over</i>
               <span>انسخ صوتك</span>
-            </a>
-          </div>
-
-          <!-- second nested row: for the lower buttons-->
-          <div class="row  justify-content-between" >
-
-            <a class="col-md-5 mt-5 pageBtn" href="#">
+ 
+            <a class="col-md-4 mt-5 pageBtn" href="#">
                 <i class="material-icons-outlined">volume_up</i>
                 <span>تصفح معرض الأصوات</span>
             </a>
 
-            <a class="col-md-5 mt-5 pageBtn" href="#">
+            <a class="col-md-4 mt-5 pageBtn" href="#">
               <i class="material-icons-outlined">favorite_border</i>
               <span>الأصوات المفضلة</span>
             </a>
-          </div>
-        </div>
+
+        
       </div>
 
       <!-- ................. HELP button ................. -->
