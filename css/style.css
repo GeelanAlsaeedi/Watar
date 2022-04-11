@@ -899,3 +899,20 @@ input[type=radio]{ /* to hide the defualt styling of the radio button */
 input[type=radio]:checked + .radio-label::after { /* to make the checked mark visible when active */
     background: rgba(148, 148, 148,1);
 }
+
+.galaryCard{ /* pageBtn is a class for the 4 buttons in the main page */
+    border-radius: 12px;
+    background-color: rgb(238, 238, 238);
+    color: black;
+    padding: 14px 25px;
+    text-align: right;
+    text-decoration: none;
+    height: 150px;
+
+    margin: 10px;
+    
+}
+
+.m{
+    box-sizing:content-box;
+}
